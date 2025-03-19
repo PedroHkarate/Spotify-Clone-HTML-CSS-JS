@@ -33,3 +33,34 @@ document.addEventListener('input', function() {
 
     requestApi(searchTerm);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const saudacaoElemento = document.getElementById("saudacoes");
+
+    if (!saudacaoElemento) {
+        console.error("Elemento de saudação não encontrado!");
+        return;
+    }
+
+    function atualizarSaudacao() {
+        const horaAtual = new Date().getHours();
+        let saudacao;
+
+        if (horaAtual >= 5 && horaAtual < 12) {
+            saudacao = "Bom dia";
+        } else if (horaAtual >= 12 && horaAtual < 18) {
+            saudacao = "Boa tarde";
+        } else {
+            saudacao = "Boa noite";
+        }
+
+        saudacaoElemento.textContent = saudacao;
+        console.log("Saudação atualizada para:", saudacao);
+    }
+
+    // Atualiza ao carregar a página
+    atualizarSaudacao();
+
+    // Atualiza automaticamente a cada minuto (60000 ms)
+    setInterval(atualizarSaudacao, 60000);
+});
