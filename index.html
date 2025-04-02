@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone Imersão</title>
+    <link rel="icon" type="image/png" href="/src/imagens/icons/favicon.png">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/vars.css">
+    <link rel="stylesheet" href="/src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/media-queries.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar-navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="/src/imagens/icons/logo-spotify.png" alt="Logo Spotify">
+                </a>
+            </div>
+            <div class="text-navgation">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="sidebar-biblioteca">
+            <div class="biblioteca">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-book book"></span>
+                            <span>Sua biblioteca</span>
+                            <span class="fa fa-plus plus"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="texto-biblioteca">
+                <span class="text titulo">Crie sua primeira playlist</span>
+                <span class="text sub_titulo">É fácil, vamos te ajudar.</span>
+
+                <button class="botao_biblioteca">
+                    <span>Criar playlist</span>
+                </button>
+            </div>
+
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+
+            <div class="idiomas">
+                <buttom class="idiomas_buttom">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </buttom>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navgation">
+                <div class="navgation">
+                    <button class="arrow-left">
+                        <img src="/src/imagens/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="/src/imagens/icons/small-right.png" alt="Seta direita">
+                    </button>
+                    <div class="header__search">
+                        <img src="/src/imagens/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+                </div>
+
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+            <div class="body__playlist">
+                <div id="result-playlists" class="playlist-container">
+                    <div class="text">
+                        <p id="saudacoes"></p>
+                        <p class="nav-secoes">Navegar por todas as seções</p>
+                    </div>
+                    <div class="playlist-cards-container">
+                        <div class="playlist-card-scrool">
+                            <section class="list-cards">
+                                <a href="" class="cards">
+                                    <div class="cards card1">
+                                        <img src="/src/imagens/playlist/1.jpeg" alt="">
+                                        <span>Boas festas</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card2">
+                                        <img src="/src/imagens/playlist/2.png" alt="">
+                                        <span>Feitos para você</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card3">
+                                        <img src="/src/imagens/playlist/3.jpeg" alt="">
+                                        <span>Lançamentos</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card4">
+                                        <img src="/src/imagens/playlist/4.jpeg" alt="">
+                                        <span>Creators</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card5">
+                                        <img src="/src/imagens/playlist/5.jpeg" alt="">
+                                        <span>Para treinar</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card6">
+                                        <img src="/src/imagens/playlist/6.jpeg" alt="">
+                                        <span>Podcasts</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card7">
+                                        <img src="/src/imagens/playlist/7.jpeg" alt="">
+                                        <span>Sertanejo</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card8">
+                                        <img src="/src/imagens/playlist/8.jpeg" alt="">
+                                        <span>Samba e pagode</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card9">
+                                        <img src="/src/imagens/playlist/9.jpeg" alt="">
+                                        <span>Funk</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card10">
+                                        <img src="/src/imagens/playlist/10.jpeg" alt="">
+                                        <span>MPB</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card11">
+                                        <img src="/src/imagens/playlist/11.jpeg" alt="">
+                                        <span>Rock</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card12">
+                                        <img src="/src/imagens/playlist/12.jpeg" alt="">
+                                        <span>Hip Hop</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card13">
+                                        <img src="/src/imagens/playlist/13.jpeg" alt="">
+                                        <span>Indie</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card14">
+                                        <img src="/src/imagens/playlist/14.jpeg" alt="">
+                                        <span>Relax</span>
+                                    </div>
+                                </a>
+                                <a href="" class="cards">
+                                    <div class="cards card15">
+                                        <img src="/src/imagens/playlist/15.jpeg" alt="">
+                                        <span>Música Latina</span>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="result-artist" class="hidden">
+                        <div class="grid-container">
+                            <div class="artist-card" id="">
+                                <div class="card-img">
+                                    <img id="artist-img" class="artist-img" />
+                                    <div class="play">
+                                        <span class="fa fa-solid fa-play"></span>
+                                    </div>
+                                </div>
+                                <div class="card-text">
+                                    <a title="Foo Fighters" class="vst" href=""></a>
+                                    <span class="artist-name" id="artist-name"></span>
+                                    <span class="artist-categorie">Artista</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="final-of-page">
+        <ul>
+            <span class="text-final-title">TESTAR O PREMIUM DE GRAÇA</span>
+            <span class="text-final-subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                anúncios. Não precisa de cartão de crédito.</span>
+        </ul>
+        <button class="final-of-page__button"> Inscreva-se grátis</button>
+    </footer>
+    <script type="text/javascript" src="/src/js/script.js"></script>
+</body>
+
+</html>
