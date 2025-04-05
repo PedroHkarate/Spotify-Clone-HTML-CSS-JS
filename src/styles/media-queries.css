@@ -1,20 +1,159 @@
-@media screen and (max-width: 1015px){
-   .list-cards{
+/*@media screen and (max-width: 1015px) {
+    .list-cards {
         grid-template-columns: 1fr 1fr;
         overflow: hidden;
     }
 }
 
-@media screen and (max-width: 1280px){
-    .list-cards{
+@media screen and (max-width: 1280px) {
+    .list-cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         overflow: hidden;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .list-cards{
+    .list-cards {
         grid-template-columns: 1fr;
         overflow: hidden;
+    }
+}
+
+/*HEADER E FOOTER*/
+
+/* Ajustes para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+
+    /* Ajusta o container principal para não ficar tão deslocado */
+    .main-container {
+        margin-left: 80px;
+        /* Reduz espaço ocupado pela sidebar */
+        margin-right: 10px;
+        max-width: 85vw;
+    }
+
+    /* Diminui a largura da sidebar */
+    .sidebar {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .sidebar .logo img {
+        width: 50px;
+        /* Reduz o tamanho do logo */
+    }
+
+    /* Ajusta a barra de pesquisa */
+    .header__search {
+        width: 250px;
+        height: 40px;
+    }
+
+    /* Ajusta os cards para 2 por linha */
+    .list-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+/* Ajustes específicos para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+
+    /* Sidebar ajustada para não sobrepor o header */
+    .sidebar {
+        width: 180px;
+        transform: scale(0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: calc(100vh - 60px);
+    }
+
+    /* Alinhar "+" e ícone da biblioteca */
+    .sidebar-biblioteca .biblioteca {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .sidebar-biblioteca .biblioteca .plus {
+        margin-left: auto;
+        padding: 0;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Ajustar o bloco de criação de playlist */
+    .texto-biblioteca {
+        margin: 10px 8px 0 8px;
+        padding: 14px 10px 15px 10px;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        background-color: #242424;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .idiomas_buttom {
+        background-color: transparent !important;
+        border-radius: 9999px !important;
+        border: 1px solid #878787 !important;
+        color: #fff !important;
+        cursor: pointer !important;
+        display: flex !important;
+        align-items: center !important;
+        padding: 4px 10px !important;
+        width: fit-content !important;
+        font-size: 10px !important;
+        font-weight: 600 !important;
+        margin: 8px auto !important;
+    }    
+
+    /* Aumentando ainda mais a largura da main */
+    .main-container {
+        width: 180vw;
+        /* Mais espaço para os cards */
+        margin-left: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 72vh;
+        /* Mantém altura ajustada */
+    }
+
+    .header__navgation {
+        margin-left: -80px;
+        margin-right: 25px;
+    }
+
+    /* Ajuste fino nos cards */
+    .list-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Mantém 2 colunas */
+        gap: 10px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .list-cards span {
+        position: absolute;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .cards {
+        width: 80px;
+        /* Reduzindo o tamanho dos cards */
+        height: 80px;
+        /* Mantendo proporcional */
+    }
+
+    .list-cards img {
+        width: 60%;
+        height: 60%;
+        transform: rotate(25deg) translate(18%, -2%);
     }
 }
